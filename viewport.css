@@ -1,0 +1,51 @@
+
+
+.padre {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.hijo1 {
+	background-color: purple;
+	height: 100vh;
+	min-height: 300px; 
+	width: 50%;
+	
+}
+
+.hijo2 {
+	background-color: skyblue;
+	height: 20vh;
+	/* viewport height es una altura relativa al dispositivo. Mide el 20% de la pantalla. Poner un mínimo de alto para la navegación en mobile */
+	
+	/* viewport width. Mide la pantalla/el body. Saltea al padre. En este caso la mitad */
+	width: 50vw;
+}
+
+.cuadrado {
+	background-color: blue;
+	/* misma unidad en alto y ancho consigo cuadrado responsive */
+	width: 50vw;
+	height: 50vw;
+	/* height: 50%; no sirve porque no responde en vertical */
+}
+
+
+
+/* de forma predeterminada los elementos de bloque miden el 100 % de lo que tienen disponible. En este caso, la medida del padre */
+
+/* porcentajes en altos no funcionan bien */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

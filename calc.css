@@ -1,0 +1,13 @@
+/* calc */
+
+h1 {
+	width: calc(50%	+ 200px);
+	margin: 50px auto;
+	background-color: pink;
+}
+
+p {
+	/* font size responsive */
+	font-size: calc(24px + 10vw);
+	/* está bueno porque es responsive, pero le dejo establecido un mínimo si o si de 24px*/
+}

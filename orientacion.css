@@ -1,0 +1,18 @@
+body {
+	background-color: green;
+}
+
+
+/* @media (orientation: portrait) { 
+	body { 
+		 background-color: blue;
+	 } 
+ } */
+
+/* calcula relacion alto y ancho para saber la orientacion del dispositivo */
+
+ @media (orientation: landscape) and (max-width: 767px){ 
+	body { 
+		 background-color: blue;
+	 } 
+ }

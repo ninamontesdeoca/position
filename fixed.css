@@ -1,0 +1,14 @@
+#fixed {
+	background-color: pink;
+	width: 100%;
+	padding: 20px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+#contenido {
+	margin-top: 80px;
+	background-color: beige;
+	max-width: 400px;	
+}

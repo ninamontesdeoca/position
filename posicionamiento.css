@@ -1,0 +1,66 @@
+/* posicionamiento */
+
+.padre {
+	width: 480px;
+	height: 480px;
+	background-color: beige;
+	margin: 0 auto;
+	/* hacemos que el elemento padre sea un límite del hijo absoluto */
+	position: relative;
+}
+
+/* mayor indica "hijos directo". No afecta a nietos */
+
+.padre > div {
+		background-color: pink;
+		width: 200px;
+		height: 200px;
+		margin: 10px;
+		float: left;
+		
+		font-size: 36px;
+		text-align: center;
+		line-height: 200px;
+}
+
+div.hijo3 {
+	background-color: skyblue;
+	position: absolute;
+	top: -20px;
+	left: 340px;
+	z-index: 1; /* marca el nivel de importancia sin la necesidad de que modifique el html. Se basa en el padre (pensarlo como dos proyectos de photoshop. el orden de capas del proyecto A no afecta al proyecto B) */
+}
+
+div.hijo4 {
+	background-color: hotpink;
+	position: relative;
+	
+	top: -200px;
+	left: 200px;
+}
+
+/* div.hijo3 -sin espacio. con espacio significa que tenés un div y que dentro hay un hijo3- cuando necesito más especifidad. Otra opción es hijo3.hijo3 */
+
+/* position static es predeterminado. un elemento debajo del otro y nunca se pisan */
+/* position relative: mueve */
+/* position absolute. pierde espacio original que lo gana el elemento siguiente. también activa el manejo de capas. Se mueve en base al primer elemento no estático que encuentr. Se le suele decir que se mueve basado en la esquina superior izquierda de la pantalla... por ahora */
+
+/* se activan las capas. trabajo elementos encima del otro, cuando estamos en relativo. Se mantiene el espacio original. Movimiento es relativo a la posición real (eso es 0,0). si uso 0,0 habilito capas y me permite moverlo. siempre se mueve desde su posición original. */
+
+/* el elemento estático siempre pierde porque no tiene habilitado las capas. */
+/* el que está arriba en una guerra de capas es por el orden del html -el último del html- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

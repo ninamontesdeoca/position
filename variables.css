@@ -1,0 +1,24 @@
+/* Variables */
+
+
+
+:root {
+	--rojo: #991212;
+}
+
+body {
+	background-color: var(--rojo);
+}
+
+h1 {
+	background-color: white;
+	color: var(--rojo);
+}
+
+@media (max-width: 1000px) {
+	/* si mencioné por primera vez la variable en root, la llamo en ese lugar */
+	:root {
+		--rojo: gold;
+	}
+}
+
