@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu-boton {
+    display: none;
+}
+.menu {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+.menu-list {
+    list-style: none;
+    display: flex;
+}
+.menu-list_item {
+    /* lo forzamos a ocupar todo el espacio disponible */
+    flex-grow: 1;
+}
+.menu a {
+    display: block;
+    text-align: center;
+    background-color: yellow;
+    padding: 10px 0;
+}
+.menu a:hover {
+background-color: gold;
+}
+h1,h2 {
+    margin-bottom: 32px;
+}
+p {
+    margin-bottom: 24px;
+}
+
+@media (max-width: 760px) {
+    .menu-list {
+        display: none;
+        position: absolute;
+        width: 100%;
+        flex-direction: column;
+    }
+    .menu a {
+        border-bottom: 1px dashed white;
+        background-color: orange;
+    }
+    .menu {
+        position: relative;
+    }
+    .menu-boton {
+        display: block;
+        /* le saco el color predeterminado */
+        background: none;
+        /* le saco el borde predeterminado */
+        border: none;
+        /* Hola ubg de safari, para que no lo siga mostrando como boton */
+        -webkit-appearance: none;
+        width: 100%;
+        background-color: orangered;
+    }
+}
+/* creo una clase en css, que no se esta usando en html pero que esta disponible para cuando la quiera usar. Es mas facil para cuando en JS preguntamos se esta activada o desactivada la clase */
+
+.mostrar {
+    display: flex;
+}

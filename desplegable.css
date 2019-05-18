@@ -1,0 +1,87 @@
+/*desplegable*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+.menu {
+	max-width: 1000px;
+	margin: 40px auto;
+}
+
+/* selecciono a las dos listas al mismo tiempo */
+.menu ul {
+	list-style: none;
+}
+
+.menu-list {
+	display: flex;
+}
+
+.menu-list_item{
+		flex-grow: 1;
+}
+
+.menu a {
+	text-align: center;
+	display: block;
+	background-color: pink;
+	padding: 10px 0;
+	color: #333;
+	
+}
+
+.menu a:hover {
+	background-color: lightblue;
+}
+
+.menu a:focus {
+	outline: 3px solid blue;
+}
+
+.submenu{
+	display: none;
+	position: absolute;
+	width: 100%;
+}
+
+.desplegable {
+	position: relative;
+}
+
+/* se pone + si es hijo: .desplegable:hover + .submenu, */
+.desplegable:hover  .submenu,
+.desplegable:focus-within  .submenu {
+	/* border: 2px solid red; */
+	display: block;
+}
+
+/* focus es para accesibilidad: para que se puedan mover en el menú desplegable usando tab */
+/* li es un item y no tiene focus de manera predeterminada */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
